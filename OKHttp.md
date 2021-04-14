@@ -31,3 +31,15 @@
 + #### OKHttp使用的是socket还是URLConnection？如何创建、连接、输入输出流操作？
 
 + #### OKHttp中运用了那些设计模式？举例说明
+
+-----------
+
+### [OkHttp 3.7源码分析（一）——整体架构](https://developer.aliyun.com/article/78105)
+
++ #### OKHttp有哪些优点？（协议、效率、设计实现）
+
++ #### 一个RealCall实例可以多次调用吗？为什么？
+
++ #### OKHttp的整体架构大致如何？分为几层？每层干什么？
+
++ #### 连接池的工作过程？call/realCall、stream/StreamAllocation、RealConnection、连接池之间的关系？
