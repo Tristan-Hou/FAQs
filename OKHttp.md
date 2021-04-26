@@ -48,4 +48,14 @@
 
 ### [OkHttp 3.7源码分析（二）——拦截器&一个实际网络请求的实现](https://developer.aliyun.com/article/78104)
 
+### [OkHttp 3.7源码分析（三）——任务队列](https://developer.aliyun.com/article/78103)
+
++ #### 线程池的有点？
+
++ #### 有几种任务队列？每一种任务队列的作用？
+
+### [OkHttp：源码详解之连接拦截器（五）](https://blog.csdn.net/baidu_32237719/article/details/109743702)
+
++ #### HttpUrl：对URL/URI进行一层封装，可以获得uri的详细信息，scheme/username/password/host/port等
+
 + #### 
