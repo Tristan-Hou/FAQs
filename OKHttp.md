@@ -54,6 +54,40 @@
 
 + #### 有几种任务队列？每一种任务队列的作用？
 
++ #### 异步请求最大请求数是多少？单一host的最大请求数是多少？
+
+------------
+
+### [浏览器 HTTP 协议缓存机制详解](https://my.oschina.net/leejun2005/blog/369148)
+
++ #### 缓存的分类有几种？
+
++ #### 浏览器第一次请求信息的大致流程是？
+
++ #### 浏览器再次请求信息的流程是？
+
++ #### Expire/Cache-control/last-modified/etag之间有什么关系和不同？
+
++ #### 既然已经有了last-modified，为何还要使用etag？
+
+### [OKHTTP之缓存配置详解](https://www.jianshu.com/p/9b2366f5e97a)
+
++ #### Cache-Control一般有那些值？莓种植的作用是什么？
+
++ #### Pragma指令是什么作用？
+
++ #### OKHttp的response类型有哪些？
+
++ #### 使用拦截器进行缓存有什么缺点？如何单独为每一次请求设置特定缓存？
+
+### [OkHttp 3.7源码分析（四）——缓存策略](https://developer.aliyun.com/article/78102)
+
++ #### Http的缓存策略是什么？
+
++ #### 
+
+------------
+
 ### [OkHttp：源码详解之连接拦截器（五）](https://blog.csdn.net/baidu_32237719/article/details/109743702)
 
 + #### HttpUrl：对URL/URI进行一层封装，可以获得uri的详细信息，scheme/username/password/host/port等
