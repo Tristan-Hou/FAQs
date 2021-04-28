@@ -56,6 +56,8 @@
 
 + #### 异步请求最大请求数是多少？单一host的最大请求数是多少？
 
++ #### Application Interceptors和Network Interceptors¶有什么不同？[Interceptors](https://square.github.io/okhttp/interceptors/)
+
 ------------
 
 ### [浏览器 HTTP 协议缓存机制详解](https://my.oschina.net/leejun2005/blog/369148)
@@ -79,6 +81,32 @@
 + #### OKHttp的response类型有哪些？
 
 + #### 使用拦截器进行缓存有什么缺点？如何单独为每一次请求设置特定缓存？
+
+### [OkHttp缓存原理](https://juejin.cn/post/6850418120729985038)
+
++ #### 说一说常用的Http协议请求字段/响应字段？
+
++ #### cacheInterceptor能缓存post/patch/put/delete方法吗？
+
++ #### CacheStrategy的执行策略？cache中使用什么作为不同缓存的key值？
+
++ #### CacheStrategy如何获取缓存cacheResponse中的头信息？尝试描述一下头信息解析之后通过get()/compute()构建CacheCategory的过程？
+
++ #### 拿到CacheStrategy后，cacheInterceptor如何处理？
+
++ #### 说一说常用的Http返回码？
+
++ #### 配置了cache后，okhttp的缓存文件有几种？有什么不同？
+
++ #### 磁盘上的日志文件是如何关联Cache并支持增删改查的呢？
+
++ #### DiskLruCache.Entry与dirty/clean文件以及DIRAY/CLEAN in .journal文件之间的关系？与.0、.1文件之间的关系？
+
++ #### DiskLruCache.Editor如何通过DiskLruCache.Entry以及fileSystem读写缓存文件内容？
+
++ #### cache如何保存缓存内容到本地文件(put方法)？ （cache-put-Cache.entry-DiskLruCache.Editor-entry.writeTo-RealCacheRequest-okio
+
++ #### 没有服务端支持是否可以实现纯客户端缓存以及如何实现？
 
 ### [OkHttp 3.7源码分析（四）——缓存策略](https://developer.aliyun.com/article/78102)
 
