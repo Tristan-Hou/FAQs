@@ -112,7 +112,17 @@
 
 + #### Http的缓存策略是什么？
 
-+ #### 
++ #### DiskCacheLru初始化时如何创建cache？（DiskLruCache.readJournalLine,DiskLruCache.processJournal）
+
++ #### 为避免日志文件不断膨胀，如何对日志进行重建精简？（DiskLruCache.rebuildJournal）
+
++ #### 当冗余日志过多时，如何重建日志？（cleanUpRunnable线程）
+
++ #### 什么是cache的SnapShot？每次获取SnapShot后，会修改日志文件吗？会重建日志文件吗？
+
++ #### OKHttp是如何保证Cache原子性与可用性的？
+
++ #### OKHttp如何防止日志过分膨胀？
 
 ------------
 
