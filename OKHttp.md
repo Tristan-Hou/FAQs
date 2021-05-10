@@ -126,8 +126,18 @@
 
 ------------
 
-### [OkHttp：源码详解之连接拦截器（五）](https://blog.csdn.net/baidu_32237719/article/details/109743702)
+### 关于Transmitter/ExchangeFinder/Exchange/route/routeSelector/proxy/StreamAllocation/HttpCodec之间的具体分析，请看下面几篇文章：
 
-+ #### HttpUrl：对URL/URI进行一层封装，可以获得uri的详细信息，scheme/username/password/host/port等
++ ### [OkHttp：源码详解之连接拦截器（五）](https://blog.csdn.net/baidu_32237719/article/details/109743702)
 
-+ #### 
+  + #### HttpUrl：对URL/URI进行一层封装，可以获得uri的详细信息，scheme/username/password/host/port等
+
+  + #### OKHttp如何实现TCP+TLS握手实现的？（简述）
+  
++ ### [OkHttp源码解析 （三）——代理和路由](https://www.jianshu.com/p/63ba15d8877a)
+
++ ### [懂了，原来 OkHttp 是这样建立 HTTPS 连接的](https://www.jianshu.com/p/f7972c30fc52)
+
++ ### [okhttp源码学习笔记（二）-- 连接与连接管理](https://www.jianshu.com/p/671a123ec163)
+
++ ### [OkHttp 源码学习笔记（三） 数据交换的流 HTTPCodec](https://www.jianshu.com/p/92ce01caa8f0)
