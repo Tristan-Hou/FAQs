@@ -178,7 +178,7 @@ Kotlin Coroutines
 - 前例中由于是主动创建了一个CoroutineScope，该实例与runBlocking没有什么关系，因此runBlocking不会等待launch逻辑
 - 即使此处添加`println("hello")`、`delay(500)`、`println("world")`依然正常运行
        
-4) coroutineScope: 自己声明协程作用域，同时会等待所有的子协程全部完成后才会完成
+4)  coroutineScope: 自己声明协程作用域，同时会等待所有的子协程全部完成后才会完成
 
 ```
 fun main() = runBlocking {
@@ -207,6 +207,16 @@ hello world
 my job2
 welcome
 ```
+为什么不是输出welcom，再输出my job1等其他输出？
+
+- runBlocking 并非suspend函数，也就是说，调用它的线程会一直位于该函数之中，直到协程执行完毕为止（阻塞；
+
+- coroutineScope是一个suspend挂起函数，也就是说，如果其中的协程挂起，那么coroutineScope函数也会挂起，这样，创建coroutineScope的外层函数就可以继续在同一个线程中执行了，该线程会"逃离"coroutineScope之外，并且可以做其他一些事情；
+- 
+- 也就是说，当coroutineScope的代码块如果没执行完时，是不会执行后面的代码（这里是println("welcom"))
+
+- coroutineScope内部代码执行完后，才会执行代码块后面的代码（可以试一试更改第一个luanch内部的delay时间，自行体会执行结果）
+
 
 #### 4. 协程是轻量级的
 
