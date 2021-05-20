@@ -24,6 +24,8 @@ fun main() = runBlocking<Unit> {
 
 - `BlockingCoroutine`是Builders.kt中的实现，它是在runBlocking中生成的，最终帮助代码生成协程并运行代码块中逻辑。
 
+**********************************
+
 #### 2. 父子协程关系
 
 - 当一个协程是通过另外一个协程启动的，那么这个协程就会通过CoroutineScope.coroutineContext来继承其上下文信息
@@ -104,6 +106,8 @@ world
 - 如果注释掉代码(1)，会发生什么？
 
 
+**********************************
+
 #### 3. CoroutineScope生命周期
 
 - 当对象到达生命周期被销毁时，与该对象相关的协程会自动销毁
@@ -154,6 +158,8 @@ destroy activity
 
 - 调用cancel之后，所有协程被取消，因此没有后续输出（本来有8个协程，最终只输出4行）
 
+**********************************
+
 #### 3. ThreadLocal
 
 - 协程可以在不同的线程中切换，而ThreadLocal在每个线程中保存不同的值，因此协程在不同线程中切换时可以任意使用当前线程里ThreadLocal对应的不用值
@@ -187,16 +193,6 @@ pre main, current thread: Thread[main @coroutine#1,5,main], thread local value: 
 - (3)处通过launch的Dispatchers.Default参数创建了一个运行于默认线程池里某一个线程的新协程，[asContextElement()](https://kotlin.github.io/kotlinx.coroutines/kotlinx-coroutines-core/kotlinx.coroutines/java.lang.-thread-local/as-context-element.html)是ThreadLocal的拓展函数，在此功能为用value = ”world“参数将threadLocal变量在新线程里保存的值赋值为value，因此(4)和(5)处输出值为value
 
 - (7)处代码又会到了main线程，因此此处threadLocal.get()的值为hello
-
-
-
-
-
-
-
-
-
-
 
 
 
