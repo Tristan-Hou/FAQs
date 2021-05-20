@@ -1,4 +1,4 @@
-### 协程 —— 父子协程、CoroutineScope生命周期、ThreadLocal
+### 协程 —— 父子协程|CoroutineScope生命周期|ThreadLocal
 
 #### 1. 协程上下文和Job
 
