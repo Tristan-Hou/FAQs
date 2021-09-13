@@ -1,6 +1,6 @@
-#### 文章链接：[Android轻量级存储方案的前世今生](https://mp.weixin.qq.com/s/DNiaQEcE7LOhhxfLu7gycg)
+#### 文章链接：[Android轻量级存储方案的前世今生](https://mp.weixin.qq.com/s/DNiaQEcE7LOhhxfLu7gycg)、[Android-SharedPreferences简析](https://leo-wxy.github.io/2020/11/18/Android-SharedPreferences%E7%AE%80%E6%9E%90/#%E6%BA%90%E7%A0%81%E8%A7%A3%E6%9E%90)
 
-#### 0
+
 ##### 1. Android常见轻量级存储方案有几种？
 
 ##### 2. sharedpreference如果存储了大量的数据会对内存造成什么影响？
